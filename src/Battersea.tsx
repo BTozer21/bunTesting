@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Martini, Hamburger } from "lucide-react";
 import "./index.css";
 
 export function Battersea() {
@@ -11,8 +12,18 @@ export function Battersea() {
           <CardTitle className="text-3xl font-bold text-left">Gordon Ramsay Bread Street</CardTitle>
 		  <CardDescription className="text-2xl font-semibold text-left">Saturday 31st Jan</CardDescription>
         </CardHeader>
-		<CardContent>
-			<Button>
+		<CardContent className="flex flex-col">
+			<div className="flex flex-row gap-2 mb-8">
+				<div className="w-fit shadow-xs hover:shadow-md transition-all duration-300 shadow-lime-400 flex flex-row rounded-xl border-2 p-3 text-center justify-center gap-2">
+					<Martini />
+					Cocktails
+				</div>
+				<div className="w=[100px] shadow-xs hover:shadow-md transition-all duration-300 shadow-red-500 flex flex-row rounded-xl border-2 p-3 text-center justify-center gap-2">
+					<Hamburger />
+					Burger
+				</div>
+			</div>
+			<Button className="h-12 text-md">
 				Request
 			</Button>
 		</CardContent>
