@@ -11,6 +11,8 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import { App } from "./App";
 import { About } from "./About";
 import { Personal } from "./Personal";
+import { Battersea } from "./Battersea";
+import { CoventGarden } from "./CoventGarden";
 import { NavBar } from"./components/NavBar";
 
 const elem = document.getElementById("root")!;
@@ -22,6 +24,8 @@ const app = (
 			<Route path="/" element={<App />} />
 			<Route path="/about" element={<About />} />
 			<Route path="/personal" element={<Personal />} />
+			<Route path="/battersea" element={<Battersea />} />
+			<Route path="/covent-garden" element={<CoventGarden />} />
 		</Routes>
 	</BrowserRouter>
   </StrictMode>
