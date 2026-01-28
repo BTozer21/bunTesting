@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Martini, Hamburger } from "lucide-react";
 import { DateSubmission } from "./components/DateSubmission";
+import { Star } from "lucide-react";
 import "./index.css";
 
 export function Battersea() {
@@ -9,8 +10,25 @@ export function Battersea() {
        <Card className="mx-auto w-[650px]">
         <CardHeader className="gap-4">
 			<img className="rounded-sm h-[400px] w-[600px] object-cover" src="https://www.gordonramsayrestaurants.com/assets/Uploads/grr-battersea.jpg" />
-          <CardTitle className="text-3xl font-bold text-left">Gordon Ramsay Bread Street</CardTitle>
-		  <CardDescription className="text-2xl font-semibold text-left">Saturday 31st Jan</CardDescription>
+			<CardTitle className="gap-2">
+				<div className="text-3xl font-bold text-left">
+					Gordon Ramsay Bread Street
+				</div>
+				<div className="flex flex-row gap-4 items-center">
+					<div className="flex flex-row">
+						<Star fill="gold" color="gold"/>
+						<Star fill="gold" color="gold"/>
+						<Star fill="gold" color="gold"/>
+						<Star fill="gold" color="gold"/>
+					</div>
+					<div className="text-xl">
+						(1.6k Reviews)
+					</div>
+				</div>
+			</CardTitle>
+			<CardDescription className="text-2xl font-semibold text-left">
+				Saturday 31st Jan
+			</CardDescription>
         </CardHeader>
 		<CardContent className="flex flex-col">
 			<div className="flex flex-row gap-2 mb-8">
@@ -26,7 +44,7 @@ export function Battersea() {
 			<DateSubmission
 				location="Battersea"
 				establishment="Gordon Ramsay Bread Street"
-				date="2025-01-31"
+				date="2026-01-31"
 			/>
 		</CardContent>
       </Card>

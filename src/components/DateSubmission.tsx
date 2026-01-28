@@ -18,7 +18,7 @@ export function DateSubmission({location, establishment, date}: {
 	const phoneNumber = formData.get("phoneNumber") as string;
 
 	if (phoneNumber !== "7812077217") {
-		toast.error('Erm... you aren\'t Mimi.')
+		toast.error('Erm... you aren\'t Mimi.', {position: "top-center"})
 		return;
 	};
 
