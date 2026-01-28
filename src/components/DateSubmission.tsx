@@ -17,7 +17,7 @@ export function DateSubmission({location, establishment, date}: {
 	const formData = new FormData(e.currentTarget);
 	const phoneNumber = formData.get("phoneNumber") as string;
 
-	if (phoneNumber !== "7585112782") {
+	if (phoneNumber !== "7812077217") {
 		toast.error('Erm... you aren\'t Mimi.')
 		return;
 	};
@@ -40,7 +40,7 @@ export function DateSubmission({location, establishment, date}: {
       if (response.ok) {
         toast.success('Sounds like a plan!', { position: "top-center" } );
       } else {
-        toast.error(`Error: ${data.error}`, {position: "top-center"});
+        toast.error(`${data.error}`, {position: "top-center"});
       }
     } catch (error) {
       toast.error('Failed to request date', {position: "top-center"});
