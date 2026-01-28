@@ -1,6 +1,7 @@
 import { serve } from "bun";
 import index from "./index.html";
 import { addDateHandler } from "./controller/addDates";
+import { getDateHandler } from "./controller/getDates";
 
 const server = serve({
   routes: {
@@ -10,6 +11,9 @@ const server = serve({
 	"/api/dates": {
 		async POST(req) {
 			return addDateHandler(req);
+		},
+		async GET(req) {
+			return getDateHandler(req);
 		}
 	},
 

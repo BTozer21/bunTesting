@@ -24,6 +24,7 @@ const app = (
 			<Route path="/" element={<About />} />
 			<Route path="/battersea" element={<Battersea />} />
 			<Route path="/covent-garden" element={<CoventGarden />} />
+			<Route path="/dates" element={<Dates />} />
 		</Routes>
 		<Toaster />
 	</BrowserRouter>
