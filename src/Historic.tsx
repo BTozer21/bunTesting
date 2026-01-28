@@ -1,20 +1,19 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { DateRetriever } from "./components/DateRetriever";
 import "./index.css";
 
-export function Dates() {
+export function Historic() {
   return (
     <div className="container flex flex-row mx-auto p-8 items-center justify-center text-center relative z-10 h-[calc(100vh-4rem)]">
 	   <Card className="mx-auto w-[650px]">
 		<CardHeader className="justify-center">
-		  <CardTitle className="text-3xl font-bold text-left">Upcoming Dates</CardTitle>
+		  <CardTitle className="text-3xl font-bold text-left">Historic Dates</CardTitle>
 		</CardHeader>
 		<CardContent>
-			<DateRetriever />
+			Maybe go on one first.
 		</CardContent>
 	  </Card>
     </div>
   );
 }
 
-export default Dates;
+export default Historic;
