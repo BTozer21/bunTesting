@@ -12,6 +12,7 @@ import { About } from "./About";
 import { Battersea } from "./Battersea";
 import { CoventGarden } from "./CoventGarden";
 import { NavBar } from"./components/NavBar";
+import { Toaster } from "./components/ui/sonner";
 
 const elem = document.getElementById("root")!;
 const app = (
@@ -23,6 +24,7 @@ const app = (
 			<Route path="/battersea" element={<Battersea />} />
 			<Route path="/covent-garden" element={<CoventGarden />} />
 		</Routes>
+		<Toaster />
 	</BrowserRouter>
   </StrictMode>
 );

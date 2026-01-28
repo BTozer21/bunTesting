@@ -1,10 +1,17 @@
 import { serve } from "bun";
 import index from "./index.html";
+import { addDateHandler } from "./controller/addDates";
 
 const server = serve({
   routes: {
     // Serve index.html for all unmatched routes.
     "/*": index,
+
+	"/api/dates": {
+		async POST(req) {
+			return addDateHandler(req);
+		}
+	},
 
     "/api/hello": {
       async GET(req) {
