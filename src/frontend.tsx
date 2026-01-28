@@ -11,6 +11,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import { About } from "./About";
 import { Battersea } from "./Battersea";
 import { CoventGarden } from "./CoventGarden";
+import { Dates } from "./Dates";
 import { NavBar } from"./components/NavBar";
 import { Toaster } from "./components/ui/sonner";
 
@@ -23,6 +24,7 @@ const app = (
 			<Route path="/" element={<About />} />
 			<Route path="/battersea" element={<Battersea />} />
 			<Route path="/covent-garden" element={<CoventGarden />} />
+			<Route path="/dates" element={<Dates />} />
 		</Routes>
 		<Toaster />
 	</BrowserRouter>
